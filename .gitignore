@@ -1,0 +1,51 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Local environment files
+.env
+.env.*
+*.log
+logs/
+
+# Project instructions and private notes
+instruction/
+
+# Downloaded datasets and generated retrieval artifacts
+data/images/
+data/embeddings/
+
+# Keep data preparation scripts under data/
+!data/
+!data/prepare_flickr30k.py
+
+# Hugging Face / model caches if created inside the repo
+.cache/
+huggingface/
+
+# Large model/checkpoint files
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+
+# FAISS / numpy generated artifacts outside data/embeddings
+*.index
+*.npy
